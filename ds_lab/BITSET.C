@@ -1,4 +1,6 @@
+
 #include <stdio.h>
+#include <conio.h>
 #include <string.h>
 #define MAX_LEN 16
 
@@ -109,6 +111,7 @@ void setDiff(char strbit1[], char strbit2[]) {
 int main() {
     int seta[MAX_LEN], a, setb[MAX_LEN], b, c;
     char bitstr1[MAX_LEN + 1], bitstr2[MAX_LEN + 1];
+    clrscr();
 
     printf("UNIVERSAL SET:\n");
     set_creation(setu, &u, 1); // is_universal = 1
@@ -141,5 +144,6 @@ int main() {
         }
     } while (c != 4);
 
+    getch();
     return 0;
 }
